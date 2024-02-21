@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="icon" type="icon" href="/assest/calculator.ico">
+  <link rel="stylesheet" href="style/light.css" id="theme">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="whole">
+  <div id="inner-whole">
+    <h2>Simple Calculator <button class="btn" onclick="changeTheme()">Change Theme</button></h2>
+    
+      <input type="text" id="display" disabled placeholder="Result">
+
+      <table>
+        <tr>
+          <td><button onclick="appendToDisplay('1')">1</button></td>
+          <td><button onclick="appendToDisplay('2')">2</button></td>
+          <td><button onclick="appendToDisplay('3')">3</button></td>
+          <td><button onclick="appendToDisplay('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay('4')">4</button></td>
+          <td><button onclick="appendToDisplay('5')">5</button></td>
+          <td><button onclick="appendToDisplay('6')">6</button></td>
+          <td><button onclick="appendToDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay('7')">7</button></td>
+          <td><button onclick="appendToDisplay('8')">8</button></td>
+          <td><button onclick="appendToDisplay('9')">9</button></td>
+          <td><button onclick="appendToDisplay('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay('0')">0</button></td>
+          <td><button onclick="clearDisplay()" style="background-color: maroon;">C</button></td>
+          <td><button onclick="calculateResult()" style="background-color:sandybrown">=</button></td>
+          <td><button onclick="appendToDisplay('/')">÷</button></td>
+        </tr>
+      </table>
+  </div>
+  </div>
+  <script src="logic.js">
+  </script>
+
+</body>
+</html>
